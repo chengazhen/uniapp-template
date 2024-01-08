@@ -74,6 +74,9 @@ dependencies:
   vue-i18n:
     specifier: ^9.9.0
     version: 9.9.0(vue@3.4.5)
+  z-paging:
+    specifier: ^2.7.1
+    version: 2.7.1
 
 devDependencies:
   '@antfu/eslint-config':
@@ -4505,12 +4508,12 @@ packages:
       acorn-walk: 7.2.0
     dev: true
 
-  /acorn-import-assertions@1.9.0(acorn@8.10.0):
+  /acorn-import-assertions@1.9.0(acorn@8.11.3):
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
     peerDependencies:
       acorn: ^8
     dependencies:
-      acorn: 8.10.0
+      acorn: 8.11.3
     dev: true
 
   /acorn-jsx@5.3.2(acorn@8.10.0):
@@ -7267,7 +7270,7 @@ packages:
         optional: true
     dependencies:
       abab: 2.0.6
-      acorn: 8.10.0
+      acorn: 8.11.3
       acorn-globals: 6.0.0
       cssom: 0.4.4
       cssstyle: 2.3.0
@@ -9557,8 +9560,8 @@ packages:
       '@webassemblyjs/ast': 1.11.6
       '@webassemblyjs/wasm-edit': 1.11.6
       '@webassemblyjs/wasm-parser': 1.11.6
-      acorn: 8.10.0
-      acorn-import-assertions: 1.9.0(acorn@8.10.0)
+      acorn: 8.11.3
+      acorn-import-assertions: 1.9.0(acorn@8.11.3)
       browserslist: 4.22.2
       chrome-trace-event: 1.0.3
       enhanced-resolve: 5.15.0
@@ -9787,6 +9790,11 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  /z-paging@2.7.1:
+    resolution: {integrity: sha512-HBnBZ50tJD5DyWxw7aVTSiqCC38uD+8W7lxWwAWqdIfh11zQmf//vgeoUthrODuzbAYYZKuRlt2iJbMrjPQZWw==}
+    engines: {HBuilderX: ^3.0.7}
+    dev: false
 
   registry.npmjs.org/lylajs-uni@0.0.1:
     resolution: {integrity: sha512-UHqplGTqy9ozV7LGBg5mFKjwm/N7yQFvwQBQnYnWzp6Y32MJA2HUMDpN51irH53xr/arAYqYgQpBHPGzrB+3Aw==, registry: https://registry.npmmirror.com/, tarball: https://registry.npmjs.org/lylajs-uni/-/lylajs-uni-0.0.1.tgz}

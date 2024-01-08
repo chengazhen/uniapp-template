@@ -1,22 +1,20 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-      "path": "pages/home/home",
-      "style": {
-        "navigationStyle": "custom"
-      }
-    },
+			"path": "pages/home/home",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
 		{
-      "path": "pages/my/my",
-      "style": {
-        "navigationStyle": "custom",
-        // "mp-weixin": {
-        //   "usingComponents": {
-        //     "chat": "plugin://myPlugin/chat"
-        //   }
-        // }
-      }
-    }
+			"path": "pages/my/my",
+			"style": {
+				"navigationStyle": "custom",
+			}
+		},
+		{
+			"path": "pages/paging/paging",
+		}
 	],
 	"tabBar": {
 		"color": "#9A9C9F",
@@ -57,7 +55,8 @@
 		"custom": {
 			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
 			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
-	        "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+			"^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
 		}
 	}
 }

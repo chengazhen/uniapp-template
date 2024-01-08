@@ -64,7 +64,8 @@
     "pinia-plugin-persistedstate": "^3.2.1",
     "uview-plus": "^3.1.41",
     "vue": "^3.4.5",
-    "vue-i18n": "^9.9.0"
+    "vue-i18n": "^9.9.0",
+    "z-paging": "^2.7.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.6.1",

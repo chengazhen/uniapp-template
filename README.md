@@ -5,7 +5,8 @@
 * pinia
 * pinia-plugin-persistedstate
 * vue-i18n
-
+* lyla-uni 请求插件
+* z-paging 上拉加载下拉刷新
 ### 注意
 
 + pinia 需要固定的版本使用， 才能兼容到 uniapp; 使用 taze 更新依赖时 taze --exclude pinia
