@@ -5,14 +5,15 @@ import transformerDirectives from '@unocss/transformer-directives'
 
 const { presetWeappAttributify, transformerAttributify } = extractorAttributify()
 
-
 export default defineConfig({
-  //@ts-ignore
+  // @ts-expect-error for demo
   presets: [presetWeapp(), presetWeappAttributify()],
   transformers: [
-    //@ts-ignore
-    transformerAttributify(),
-    //@ts-ignore
+    // @ts-expect-error for demo
+    transformerAttributify({
+      enforce: 'pre',
+    }),
+    // @ts-expect-error for demo
     transformerClass(),
     transformerDirectives(),
   ],

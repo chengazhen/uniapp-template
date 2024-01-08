@@ -1,9 +1,9 @@
-import { http } from "@/utils/http";
+import { lyla } from "@/utils/request";
 
 export function getOpenID(data: { code: string }): Promise<any> {
-  return http({
+  return lyla({
     method: "POST",
-    data: data,
+    json: data,
     url: "/user/wxMiniProgram/sessionInfo"
   })
 }
