@@ -60,12 +60,11 @@
     "dayjs": "^1.11.10",
     "install": "^0.13.0",
     "lylajs-uni": "^0.0.1",
-    "pinia": "^2.1.7",
+    "pinia": "^2.0.33",
     "pinia-plugin-persistedstate": "^3.2.1",
     "uview-plus": "^3.1.41",
     "vue": "^3.4.6",
-    "vue-i18n": "^9.9.0",
-    "z-paging": "^2.7.1"
+    "vue-i18n": "^9.9.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.6.1",
