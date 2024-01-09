@@ -1,5 +1,5 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
 			"path": "pages/home/home",
 			"style": {
@@ -9,11 +9,18 @@
 		{
 			"path": "pages/my/my",
 			"style": {
-				"navigationStyle": "custom",
+				"navigationStyle": "custom"
 			}
 		},
 		{
-			"path": "pages/paging/paging",
+			"path": "pages/paging/paging"
+		},
+		{
+			"path": "pages/mescroll/mescroll",
+			"style": {
+				"navigationBarTitleText": "mescroll",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"tabBar": {
