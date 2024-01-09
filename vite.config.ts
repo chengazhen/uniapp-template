@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
 import AutoImport from 'unplugin-auto-import/vite'
 import UnoCSS from 'unocss/vite'
-import Components from '@uni-helper/vite-plugin-uni-components'
+import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,6 +15,7 @@ export default defineConfig({
     Components({
       dirs: ['src/components/'],
       dts: './typing/components.d.ts',
+      resolvers: [],
     }),
     uni(),
   ],
