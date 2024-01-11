@@ -2,7 +2,7 @@
  * @fileoverview latex 插件
  * katex.min.js来源 https://github.com/rojer95/katex-mini
  */
-import parse from './katex.min.cjs'
+import parse from './katex.min.js'
 
 function Latex () {
 
