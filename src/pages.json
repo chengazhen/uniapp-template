@@ -13,6 +13,9 @@
 			}
 		},
 		{
+			"path": "pages/katex/katex",
+		},
+		{
 			"path": "pages/paging/paging"
 		},
 		{
