@@ -9,6 +9,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    NavBar: typeof import('./../src/components/NavBar.vue')['default']
+    HNavBar: typeof import('./../src/components/hexui/HNavBar.vue')['default']
+    HTabBar: typeof import('./../src/components/hexui/HTabBar.vue')['default']
   }
 }

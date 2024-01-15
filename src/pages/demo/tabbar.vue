@@ -1,9 +1,14 @@
 <script setup lang="ts">
+onShow(() => {
+  uni.hideTabBar()
+})
 </script>
 
 <template>
   <div class="">
-    <HNavBar title="我的" />
+    <HNavBar title="tabbar" />
+
+    <HTabBar value="pages/demo/tabbar" />
   </div>
 </template>
 

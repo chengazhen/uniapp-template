@@ -1,11 +1,10 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <div class="">
-    <NavBar />
+    <HNavBar />
   </div>
 </template>
-
-<script setup lang="ts">
-import NavBar from '@/components/NavBar.vue';
-</script>
 
 <style lang="scss"></style>

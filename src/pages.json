@@ -13,7 +13,10 @@
 			}
 		},
 		{
-			"path": "pages/paging/paging"
+			"path": "pages/paging/paging",
+			"style": {
+				"navigationStyle": "custom"
+			}
 		},
 		{
 			"path": "pages/mescroll/mescroll",
@@ -21,6 +24,12 @@
 				"navigationBarTitleText": "mescroll",
 				"enablePullDownRefresh": false
 			}
+		}, {
+			"path": "pages/demo/tabbar",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
 		}
 	],
 	"tabBar": {
@@ -36,6 +45,12 @@
 				"iconPath": "static/tabbar/family/homework.png",
 				"selectedIconPath": "static/tabbar/family/homework_selected.png",
 				"text": "作业"
+			},
+			{
+				"pagePath": "pages/demo/tabbar",
+				"iconPath": "static/tabbar/family/homework.png",
+				"selectedIconPath": "static/tabbar/family/homework_selected.png",
+				"text": "组件"
 			},
 			// {
 			//   "pagePath": "pages/find/find",

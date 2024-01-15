@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [
     UnoCSS(),
     AutoImport({
-      imports: ['vue'],
+      imports: ['vue', 'uni-app'],
       dts: './typing/auto-imports.d.ts',
     }),
     Components({

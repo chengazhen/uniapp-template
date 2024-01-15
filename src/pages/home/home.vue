@@ -1,20 +1,31 @@
+<script setup lang="ts">
+import { getOpenID } from '@/api/home'
+
+getOpenID({
+  code: '',
+}).then((res) => {
+  console.log(res)
+})
+
+const name = 'home'
+
+function goPaging() {
+  uni.navigateTo({
+    url: '/pages/paging/paging',
+  })
+}
+</script>
+
 <template>
   <div class="">
-    <NavBar />
-    <div class="text-28rpx">sdfsdfsdfs</div>
+    <HNavBar title="sdfsdfsd" :placeholder="true" />
+    <div class="text-28rpx">
+      sdfsdfsdfs
+    </div>
+    <div @click="goPaging">
+      sdfsdfsdf
+    </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import { getOpenID } from '@/api/home';
-import NavBar from '@/components/NavBar.vue';
-getOpenID({
-  code: ''
-}).then(res => {
-  console.log(res);
-});
-
-const name = 'home';
-</script>
 
 <style lang="scss"></style>
