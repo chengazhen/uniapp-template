@@ -4,11 +4,28 @@
 * unocss
 * pinia
 * pinia-plugin-persistedstate
-* vue-i18n
+* ~~vue-i18n~~
 * lyla-uni 请求插件
 * z-paging 上拉加载下拉刷新
+* @vueuse/core
 
-### 使用
+### 注意
+
++ pinia 需要固定的版本使用， 才能兼容到 uniapp; 使用 taze 更新依赖时 taze --exclude pinia
+
++ @vueuse/core 在编译为小程序时, vue sdk 被 uniapp 内部做了修改了所以会出现问题, 在 uni-polyfill 做了处理 [uniapp 仓库 issue](https://github.com/dcloudio/uni-app/issues/4604)
+
++ eslint 规则有可能需要再 setting.json 中配置 `"eslint.experimental.useFlatConfig": true`
+
++ mescroll 在编写demo的过程中感觉到还有很多需要优化的地方, 这里只涉及到了 mescrollBody, 在使用的过程中发现首次触发式, 下拉加载和上拉加载都会触发
+
++ 使用自定义tabbar时避免页面闪烁 [参考](https://blog.csdn.net/weixin_43191327/article/details/135498300)
+
+### 开发
+
+#### 规范
+
+关于 eslint，eslint选择了 @antfu/eslint-config 规则
 
 #### 请求部分
 
@@ -47,22 +64,14 @@ export function getOpenID(data: { code: string }): Promise<any> {
 
 ```
 
+#### 页面跳转流程
+
+灵活使用 `uni.redirect` 实现流程得处理，如果登录成功之后需要返回上一页。如果触发登录时中间有多个路由，就需要 `uni.redirect` 来减少中间的路由记录
+
 ### 待办
 
 - [x] 增加 mescroll 使用示例
 
-### 注意
+封装统一跳转工具, 统一判断登录
 
-+ pinia 需要固定的版本使用， 才能兼容到 uniapp; 使用 taze 更新依赖时 taze --exclude pinia
-
-+ eslint 规则有可能需要再 setting.json 中配置 `"eslint.experimental.useFlatConfig": true`
-
-+ mescroll 在编写demo的过程中感觉到还有很多需要优化的地方, 这里只涉及到了 mescrollBody, 在使用的过程中发现首次触发式, 下拉加载和上拉加载都会触发
-
-+ 使用自定义tabbar时避免页面闪烁 [参考](https://blog.csdn.net/weixin_43191327/article/details/135498300)
-
-### 开发
-
-#### 开发规范
-
-关于 eslint，eslint选择了 @antfu/eslint-config 规则
+uni.redirect 使用

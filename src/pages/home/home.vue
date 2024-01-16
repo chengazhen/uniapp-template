@@ -1,13 +1,18 @@
 <script setup lang="ts">
 import { getOpenID } from '@/api/home'
 
+const props = defineProps({
+  msg: {
+    type: String,
+    default: 'home',
+  },
+})
+const emits = defineEmits(['update:msg'])
+const value = useVModel(props, 'msg', emits)
 getOpenID({
   code: '',
 }).then((res) => {
-  console.log(res)
 })
-
-const name = 'home'
 
 function goPaging() {
   uni.navigateTo({
@@ -20,7 +25,7 @@ function goPaging() {
   <div class="">
     <HNavBar title="sdfsdfsd" :placeholder="true" />
     <div class="text-28rpx">
-      sdfsdfsdfs
+      {{ value }}
     </div>
     <div @click="goPaging">
       sdfsdfsdf
